@@ -1,17 +1,17 @@
 class UraiRajutKata:
-    def urai(self, string):
+    def urai(self, kata):
         result = ''
-        for i in range(len(string)):
+        for i in range(len(kata)):
             for j in range(i + 1):
-                result += string[j]
+                result += kata[j]
         return result
 
-    def rajut(self, string):
+    def rajut(self, kata):
         current_len = 1
 
-        while len(string) > 0:
-            result = string[:current_len]
-            string = string[current_len:]
+        while len(kata) > 0:
+            result = kata[:current_len]
+            kata = kata[current_len:]
             current_len += 1
 
         return result
